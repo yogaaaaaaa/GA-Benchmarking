@@ -1,0 +1,41 @@
+{
+  "name": "benchmarking-ga",
+  "version": "1.0.0",
+  "description": "Create a simple backend that can read external API and serve it to frontend when called.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --testTimeout=30000 --coverage --forceExit",
+    "dev": "NODE_ENV=development nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glints-Academy/benchmarking-yogaaaaaaa.git"
+  },
+  "author": "Yoga Adhipratama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Glints-Academy/benchmarking-yogaaaaaaa/issues"
+  },
+  "homepage": "https://github.com/Glints-Academy/benchmarking-yogaaaaaaa#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "mongoose-delete": "^0.5.3",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "cross": "^1.0.0",
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
